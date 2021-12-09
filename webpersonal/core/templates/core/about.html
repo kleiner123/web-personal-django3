@@ -1,0 +1,25 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Acerca de{% endblock %}
+
+{% block background %}{% load static %}{% static 'core/img/about-bg.jpg' %}{% endblock %}
+
+{% block headers %}
+      <h1>Kleiner Alarcón C</h1>
+      <span class="subheading">Ingeniero en Sistemas</span>
+{% endblock %}
+
+{% block content%}
+   <div class="container">
+      <div class="row">   
+        <div class="col-lg-3 col-md-4 offset-lg-1">
+          <img class="img-fluid avatar" src="{% static 'core/img/avatar.jpg' %}" alt="">
+        </div>
+        <div class="col-lg-7 col-md-8">
+          <h2 class="section-heading">Kleiner Alarcón C</h2>   
+          <p>Nacio en Portoviejo Ecuador, edad 19 años, 5to semestre en la UTM. </p>
+          <p>Me gusto la tecnologia desde pequeño, me encanta aprender cosas nuevas, soy una persona abierta, me gustan los retos para poder encontrarle una respuesta a cada inquietud que pueda tener.</p>
+        </div>
+      </div>  
+    </div>
+{% endblock %}
